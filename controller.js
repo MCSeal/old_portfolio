@@ -20,26 +20,3 @@ exports.getSearch = (req, res, next) => {
 
 
 }
-
-
-
-
-// exports.postShare = (req, res, next) => {
-    
-//     favourites = 
-//     const favList = new Favourite({
-//     favourites: favourites,
-//     id:id
-    
-//     });
-
-//     favourites
-//     .save()
-//     .then(result => {
-        
-//     })
-//     .catch(error => {
-//         console.log(error)
-//     })
-    
-// }

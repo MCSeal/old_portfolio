@@ -18,11 +18,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.set('view engine', 'ejs')
 
-
-
 app.use(route)
 
 const server = http.createServer(app);
-app.listen(3000);
+app.listen(8080);
 
 
