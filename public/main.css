@@ -42,7 +42,7 @@ html {
 
   
   .header{
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     background-color: #7e8976;
     
@@ -190,6 +190,8 @@ html,body
       h1 {
         font-size: 7vw;
         margin-top: 0;
+        max-height: 0.2rem;
+        
       }
 
 
@@ -217,7 +219,7 @@ html,body
 
      /* HEADER styles */
       .header{
-        max-height: 0.15rem;
+        max-height: 20px;
       	background-color: #000;
       	color: #fff;
       	position: fixed;
@@ -225,6 +227,8 @@ html,body
       	width: 100%;
       
       }
+
+
 
       .header-nav{
           float: right;
@@ -443,13 +447,13 @@ html,body
 
       /* SOCIAL STYLES */
     .bio-link {
-      
+        float: right;
         font-size: 2rem;
-        text-align: right;
+        
         list-style: none;
         position: fixed;
-        right: 100px;
-        top: 20px;
+        right: 2%;
+        top: 10px;
         color: #b4c3d6;
        
           }
@@ -457,6 +461,7 @@ html,body
    	.bio-link:hover,
     .bio-link:active {
       	background: #b4c3d6;
+      	border-radius: 50%;
       }  
 
 
@@ -516,9 +521,8 @@ html,body
         box-sizing: border-box;
         float: left;
         font-size: 1rem;
-        margin: 2rem 5 0;
+        margin: 3rem 5 0;
         padding: 2rem 3%;
-        
         width: 18%;
         }
         
@@ -534,7 +538,7 @@ html,body
       object-fit: cover;
       display: inline-block;
       text-align: center;
-      border-radius: 99px;
+      border-radius: 50%;
       margin-top: 2rem;
       
     }
@@ -629,7 +633,7 @@ html,body
   
 }
 .bio-link{
-  right: 65px;
+  right: 2%;
 }
 
 .hero-home{
