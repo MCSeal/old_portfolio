@@ -6,7 +6,5 @@ const router = express.Router()
 
 router.get('/', controller.getIndex);
 
-router.post('/search', controller.getSearch)
-
 
 module.exports = router;

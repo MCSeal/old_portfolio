@@ -192,9 +192,7 @@ html,body
         margin-top: 0;
       }
 
-      a {
-        color: #ff0000;
-      }
+
       h2{
         font-size: 30px;
       }
@@ -219,6 +217,7 @@ html,body
 
      /* HEADER styles */
       .header{
+        max-height: 0.15rem;
       	background-color: #000;
       	color: #fff;
       	position: fixed;
@@ -426,7 +425,7 @@ html,body
         background-color: #f5f5f2;
         background-size: cover;
         box-sizing: border-box;
-        height: 40vh;
+        height: 43vh;
         padding-top: 1vh;
       }
 
@@ -443,41 +442,32 @@ html,body
       }
 
       /* SOCIAL STYLES */
-    .social-link {
-        color: #FFF;
-        background: rgba(0,0,0, 0.5);
-        display: inline-block;
-        font-family: helvetica, arial, sans;
-        font-size: 1.7em;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 99px;
-        box-sizing: border-box;
-        height: 1.5em;
-        line-height: 1;
-        padding-top: 0.25em;
-        vertical-align: middle;
-        width: 1.5em;
+    .bio-link {
+      
+        font-size: 2rem;
+        text-align: right;
+        list-style: none;
+        position: fixed;
+        right: 100px;
+        top: 20px;
+        color: #b4c3d6;
+       
           }
 
-   	.social-link:hover,
-    .social-link:active {
-      	background: #3462f7;
+   	.bio-link:hover,
+    .bio-link:active {
+      	background: #b4c3d6;
       }  
-    .social-list{
-      list-style: none;
-      padding: 0;
-      text-align: right;
-    }
 
-    .social-list > li {
+
+    .bio-list > li {
       display: inline-block;
       margin: 0 0.8em;
     }
       /* HOME PAGE STYLES*/
       .home-section{
         width: 100vw;
+        
       }
       .home-section h2{
         margin-botton: 1.5rem;
@@ -506,11 +496,7 @@ html,body
         
         
       }
-      .callout-copy{
-        flex: 0 0 65em;
-        padding:0 2vw;
-        
-      }
+
       
       
       /* BIO STYLES */
@@ -521,7 +507,7 @@ html,body
       overflow: hidden;
     }
 
-    .bio-box .social-link{
+    .bio-box .bio-link{
         display: block;
         margin: 2em auto 1em;
     }
@@ -590,11 +576,13 @@ html,body
   .section-inner{
     padding: 2rem;
     background-color: #fff;
+    border-radius: 25px;
   }
   
   .secondary-section{
     max-width: 30%;
     padding: 2rem;
+    padding-left: 8rem;
   }
   
   .skills{
@@ -611,28 +599,6 @@ html,body
     align-items: center;
   }
 
-  .location{
-    align-items: right;
-    padding-right: 10rem;
-  }
-  
-  .wheather-app{
-    padding-left: 55rem;
-    margin-top: -6rem;
-  }
-
- 
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -646,108 +612,40 @@ html,body
     box-shadow: none;
 }
 
+.full-hero{
+  padding-bottom: 1rem;
+  float: left;
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+
+.bio-box img{
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+.bio-link{
+  right: 65px;
+}
 
 .hero-home{
   background-image: url(/images/banner.jpg);
   max-width:100%;
   height: 33vh;
-  padding-bottom: 53vw;
+  padding-bottom: 53vw
+
 }
+
+
 .half-hero{
         margin-right:0em;
         margin-left:0em
       }
-  /* HEADER STYLES */
-  .header-nav{
-    padding: 3vh 1em 0 0;
-  }
-  .header-nav > li{
-    margin-left: 0.25em;
-  }
-  .header-nav > li ~ li{
-    padding-left: 0.15em;
-  }
-  .header-nav {
-    font-size: 3.25vw;
-  }
-  .header-logo{
-    left: auto;
-  }
-  
-  .header-nav a,
-  .drop-trigger{
-    color: #fff;
-  }
-  
-  /* mobile menu */
-  
-  .show-mobile-menu{
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    float: right;
-    padding: 1.5em;
-    position: relative;
-    margin-top: 1.5vh;
-  }
-  .header-nav{
-    background-color: #444;
-    box-sizing: border-box;
-    left: 0;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    top: 10vh;
-    transition: all 0.5s ease-in-out;
-    width: 100vw;
-    z-index: 9;
-    text-align: center;
-  }
-  
-  .header-nav li{
-    border: 0;
-    display: block;
-    margin-top: 1em;
-    margin: 1em 0 0;
-    padding: 0;
-    
-  }
 
-  .header-nav li:last-child{
-    margin-bottom: 1em;
-  }
-  .header-nav li:first-child a{
-    color: #fff;
-  }
-  
-  .header-nav .drop-trigger{
-    padding-right: 0;
-  }
- 
- /* hide dropdown */
- 
- .header-nav .dropdown:hover .drop-menu,
- .header-nav .drop-trigger:after{
-  display:none; 
- }
- 
-  .mobile-menu-check:checked ~ .header-nav {
-    max-height: 1000px;
-  }
-  
-  .mobile-menu-check:checked ~ .show-mobile-menu:after{
-    color: #22A7F0;
-    background-color: #000;
-    content: "CLOSE";
-    left: 0;
-    position: absolute;
-    top: 0;
-    top: 1.5em;
-    width: 100%;
-    text-align: center;
-  }
-  
   /*Home STYLES*/
   
   .callout-title{
@@ -755,17 +653,8 @@ html,body
     text-align: center;
     padding-bottom: 2vh;
   }
-  .home-callout{
-    flex-direction: column;
-    width: 100%;
  
-  }
-  
-  .callout-copy{
-    flex: 1;
-    line-height:1.5;
-   
-  }
+
   .home-section{
     width: 100vw;
     }
@@ -779,18 +668,20 @@ html,body
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #b4c3d6;
+    
     }
     
   .about-section{
     max-width: 80%;
     padding: 2rem;
     margin: auto;
+    border-radius: 55px;
   }
   .section-inner{
     padding-left: 1rem;
     Max-width: 90%;
     line-height: 1.4;
+    border-radius: 25px;
   }
   
   /*bio styles*/
@@ -817,29 +708,16 @@ html,body
     
     
    .secondary-section{
+     margin-left: 3rem;
      max-width: 60%;
-     padding: 3rem;
+     padding: 1rem;
+     
    } 
-    
+    .secondary-section .contact{
+     text-align: center;
+   } 
   .skills .section-inner{
     padding-left: 3rem;
   }  
    
-   
-  /* IFRAME STYLE FOR YOUTUBE EMBED */
-  
-  .iframe_container{
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; 
-  height: 0;
-}
-.iframe_container iframe{
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-  
 }

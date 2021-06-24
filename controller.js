@@ -16,7 +16,3 @@ exports.getIndex = (req, res, next) => {
     })
 
 }
-exports.getSearch = (req, res, next) => {
-
-
-}
