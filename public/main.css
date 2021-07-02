@@ -427,10 +427,12 @@ html,body
       /* Hero STYLES*/
       .full-hero{
         background-color: #f5f5f2;
-        background-size: cover;
+        
         box-sizing: border-box;
-        height: 43vh;
+        height: 20rem;
         padding-top: 1vh;
+       
+        
       }
 
       .half-hero{
