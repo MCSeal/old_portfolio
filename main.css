@@ -580,9 +580,21 @@ html,body
   }
   
   .section-inner{
+    position: relative;
     padding: 2rem;
     background-color: #fff;
     border-radius: 25px;
+  }
+  
+  .title-inner{
+    position: relative;
+    
+    
+  }
+  .link-inner{
+   float: right;
+   margin: auto;
+   
   }
   
   .secondary-section{
@@ -604,7 +616,6 @@ html,body
     display: flex;
     align-items: center;
   }
-
 
 
 
